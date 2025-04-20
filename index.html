@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Hockey Scoreboard</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+           <!-- Top info bar -->
+    <div class="scoreboard">
+        <div class="scoreboard-top">
+            <div class="info-item">April 22</div>
+            <div class="info-item" id="game-info">Round 1, Game 1</div>
+            <div class="info-item logos">
+                <!-- Replace with your actual logo images -->
+                <img
+                src="SN-Logo.jpg"
+                alt="SN Logo"
+                class="net-logo"
+                >
+                <!-- TBS -->
+                <img
+                src="tbs_logo.png"
+                alt="TBS Logo"
+                class="net-logo"
+                >
+            </div>
+        </div>
+        
+        <div class="scoreboard-body">
+            <!-- HOME panel -->
+            <div class="team-panel home">
+                <div class="team-name">HOME</div>
+                <div class="team-logo">
+                    <img
+                        src="team1.webp"
+                        alt="Team 1 Logo"
+                        width="80"
+                        height="80"
+                        class="team-logo"
+                    >
+                </div>
+                <div class="record">42‑33‑7</div>
+                <div class="score-panel">
+                    <span class="score">0</span>
+                </div>
+            <!-- HOME panel control button -->
+                <div class="controls">
+                    <button data-team="home" data-points="1">+1</button>
+                </div>
+            </div>
+            
+             <!-- CENTER panel -->
+            <div class="center-panel">
+                <!-- Game‑in‑series display (replaces period-display) -->
+                <div class="period" id="game-display">1st</div>
+
+                <!-- Clock -->
+                <div class="game-clock">
+                    <span id="game-clock">0:00</span>
+                </div>
+
+                <!-- Series status -->
+                <div class="series-status" id="series-status">
+                    Series tied 0‑0
+                </div>
+
+                <!-- Controls: Pause / End Game -->
+                <div class="center-controls">
+                    <button id="pause-btn">Pause</button>
+                    <button id="reset-btn">End Game</button>
+                </div>
+            </div>
+            
+             <!-- GUEST panel -->
+            <div class="team-panel guest">
+                <div class="team-name">GUEST</div>
+                <div class="team-logo">
+                    <img
+                        src="team2.webp"
+                        alt="Team 2 Logo"
+                        width="80"
+                        height="80"
+                        class="team-logo"
+                    >
+                </div>
+                <div class="record">47‑30‑5</div>
+                <div class="score-panel">
+                    <span class="score">0</span>
+                </div>
+                <!-- GUEST panel control buttons-->
+                <div class="controls">
+                    <button data-team="guest" data-points="1">+1</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
